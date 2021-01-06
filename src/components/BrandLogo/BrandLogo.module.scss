@@ -1,13 +1,12 @@
-.brandLogo {
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    display: flex;
-    
-  }
+.brandLogo {
+  @include flex-center();
+
   &.small {
     width: 220px;
     height: 80px;
@@ -18,5 +17,22 @@
   }
   &.circle {
     border-radius: 50%;
+  }
+
+  .logo {
+    flex: 1;
+    @include flex-center();
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      display: flex;
+    }
+  }
+
+  .bodyText {
+    flex: 2;
   }
 }

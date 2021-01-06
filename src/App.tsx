@@ -2,6 +2,8 @@ import * as React from 'react';
 import BrandLogo from './components/BrandLogo/BrandLogo';
 import Header from './components/layout/Header/Header';
 import Navigation from './components/Navigation/Navigation';
+import classes from './App.module.scss';
+import './reset.scss';
 
 export interface IAppProps {}
 
@@ -16,7 +18,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
 
   public render() {
     return (
-      <div>
+      <div className={classes.app}>
         <Header>
           <BrandLogo size={'large'} />
           <Navigation />

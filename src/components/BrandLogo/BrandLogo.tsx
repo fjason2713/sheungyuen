@@ -1,6 +1,6 @@
 import classes from './BrandLogo.module.scss';
 import React from 'react';
-import SheungYuen from '../../assets/brand_logo.jpg';
+import SheungYuen from '../../assets/sy_logo.jpg';
 
 interface IBrandLogoProps {
   size: 'large' | 'small';
@@ -14,9 +14,13 @@ const BrandLogo: React.FunctionComponent<IBrandLogoProps> = (props) => {
         props.circle ? classes.circle : ''
       }`}
     >
-      <img src={SheungYuen} alt="SheungYuen" />
-      <p>First Quarter Jewellery</p>
-      <p>上弦閣｜古風首飾設計</p>
+      <div className={classes.logo}>
+        <img src={SheungYuen} alt="SheungYuen" />
+      </div>
+      <div className={classes.bodyText}>
+        <p>First Quarter Jewellery</p>
+        <p>上弦閣｜古風首飾設計</p>
+      </div>
     </div>
   );
 };
