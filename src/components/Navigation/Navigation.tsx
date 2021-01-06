@@ -14,7 +14,7 @@ export default class Navigation extends React.Component<INavigationProps, INavig
 
   public render() {
     return (
-      <div>
+      <div className={classes.navigation}>
         <button>Home</button>
         <button>Shop</button>
         <button>Blog</button>

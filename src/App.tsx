@@ -4,6 +4,7 @@ import Header from './components/layout/Header/Header';
 import Navigation from './components/Navigation/Navigation';
 import classes from './App.module.scss';
 import './reset.scss';
+import Body from './components/layout/Body/Body';
 
 export interface IAppProps {}
 
@@ -23,6 +24,11 @@ export default class App extends React.Component<IAppProps, IAppState> {
           <BrandLogo size={'large'} />
           <Navigation />
         </Header>
+        <Body>
+          <InstagramFeed />
+          <Blogs />
+          <PromotionPicture />
+        </Body>
       </div>
     );
   }
