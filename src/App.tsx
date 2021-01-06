@@ -5,6 +5,9 @@ import Navigation from './components/Navigation/Navigation';
 import classes from './App.module.scss';
 import './reset.scss';
 import Body from './components/layout/Body/Body';
+import InstagramFeed from './components/InstagramFeed/InstagramFeed';
+import Blogs from './components/Blogs/Blogs';
+import PromotionPicture from './components/PromotionPicture/PromotionPicture';
 
 export interface IAppProps {}
 
