@@ -16,6 +16,23 @@
   .shopOverview {
     height: 1000px;
     background-color: rgb(228, 216, 215);
+    @include flex-center();
+    flex-direction: column;
+
+    .title {
+      p {
+        text-align: center;
+        font-size: 40px;
+      }
+    }
+
+    .largeLogo {
+      img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+      }
+    }
   }
 
   .products {

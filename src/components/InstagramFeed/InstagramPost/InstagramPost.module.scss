@@ -4,7 +4,7 @@
   position: relative;
   width: 340px;
   height: 340px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 0;
 
   img {
     z-index: 1;
@@ -38,12 +38,12 @@
   &.isHover {
     cursor: pointer;
     img {
-      transition-delay: 200ms;
+      transition-delay: 0ms;
       filter: brightness(0.5);
     }
     .textMask {
       p {
-        transition-delay: 200ms;
+        transition-delay: 0ms;
         opacity: 1;
       }
     }

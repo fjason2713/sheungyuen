@@ -1,3 +1,4 @@
+import SheungYuen from '../../assets/sy_logo.jpg';
 import classes from './InstagramFeed.module.scss';
 import React from 'react';
 import InstagramPost, { InstagramPostData } from './InstagramPost/InstagramPost';
@@ -46,7 +47,18 @@ export default class InstagramFeed extends React.Component<IInstagramFeedProps, 
               return <InstagramPost key={index} post={post} />;
             })}
         </div>
-        <div className={classes.shopOverview}></div>
+        <div className={classes.shopOverview}>
+          <div className={classes.title}>
+            <p>
+              上弦閣 | 品牌故事
+              <br />
+              Luna Archaistic Jewellery | Background
+            </p>
+          </div>
+          <div className={classes.largeLogo}>
+            <img src={SheungYuen} alt="SheungYuen" />
+          </div>
+        </div>
         <div className={classes.products}></div>
       </div>
     );
