@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Blogs from '../../components/Blogs/Blogs';
 import BrandLogo from '../../components/BrandLogo/BrandLogo';
 import InstagramFeed from '../../components/InstagramFeed/InstagramFeed';
@@ -22,6 +23,11 @@ export default class Home extends React.Component<IHomeProps, IHomeState> {
   public render() {
     return (
       <div className={classes.home}>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>上弦閣 - First Quarter Jewelry</title>
+        </Helmet>
+
         <Header>
           <BrandLogo size={'large'} />
           <Navigation />
