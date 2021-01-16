@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Blogs from '../../components/Blogs/Blogs';
 import BrandLogo from '../../components/BrandLogo/BrandLogo';
-import InstagramFeed from '../../components/InstagramFeed/InstagramFeed';
+import InstagramArea from '../../components/InstagramArea/InstagramArea';
 import Body from '../../components/layout/Body/Body';
 import Header from '../../components/layout/Header/Header';
 import Navigation from '../../components/Navigation/Navigation';
@@ -34,7 +34,7 @@ export default class Home extends React.Component<IHomeProps, IHomeState> {
         </Header>
         <div className={classes.divider} />
         <Body>
-          <InstagramFeed />
+          <InstagramArea />
           <Blogs />
           <PromotionPicture />
         </Body>

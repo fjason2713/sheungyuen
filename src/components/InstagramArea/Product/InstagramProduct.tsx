@@ -27,8 +27,14 @@ export default class InstagramProduct extends React.Component<IInstagramProductP
         <img src={image} alt={'product'} />
         <p className={classes.name}>{name}</p>
         <p className={classes.prices}>
-          <span style={{ textDecoration: !!discountPrice ? 'line-through' : 'none' }}>HK${originalPrice}</span> HK$
-          {discountPrice}
+          {!!discountPrice ? (
+            <>
+              <span style={{ textDecoration: 'line-through' }}>HK${originalPrice}</span> HK$
+              {discountPrice}
+            </>
+          ) : (
+            `HK$${originalPrice}`
+          )}
         </p>
       </div>
     );

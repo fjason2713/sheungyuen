@@ -1,20 +1,20 @@
 import SheungYuen from '../../assets/sy_logo.jpg';
-import classes from './InstagramFeed.module.scss';
+import classes from './InstagramArea.module.scss';
 import React from 'react';
 import InstagramPost, { IInstagramPostProps } from './Post/InstagramPost';
 import DummyImg from '../../assets/alvava.jpg';
 import InstagramProduct, { IInstagramProductProps } from './Product/InstagramProduct';
 
-interface IInstagramFeedProps {}
+interface InstagramAreaProps {}
 
-interface IInstagramFeedState {
+interface IInstagramAreaState {
   loading: boolean;
   posts: IInstagramPostProps[];
   products: IInstagramProductProps[];
 }
 
-export default class InstagramFeed extends React.Component<IInstagramFeedProps, IInstagramFeedState> {
-  constructor(props: IInstagramFeedProps) {
+export default class InstagramArea extends React.Component<InstagramAreaProps, IInstagramAreaState> {
+  constructor(props: InstagramAreaProps) {
     super(props);
 
     this.state = {
