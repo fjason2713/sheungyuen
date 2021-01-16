@@ -1,18 +1,14 @@
 import classes from './InstagramPost.module.scss';
 import React from 'react';
 
-interface IInstagramPostProps {
-  post: InstagramPostData;
+export interface IInstagramPostProps {
+  date: Date;
+  img: string;
+  description: string;
 }
 
 interface IInstagramPostState {
   isHover: boolean;
-}
-
-export interface InstagramPostData {
-  date: Date;
-  img: string;
-  description: string;
 }
 
 export default class InstagramPost extends React.Component<IInstagramPostProps, IInstagramPostState> {
@@ -25,7 +21,7 @@ export default class InstagramPost extends React.Component<IInstagramPostProps, 
   }
 
   public render() {
-    const { date, img, description } = this.props.post;
+    const { date, img, description } = this.props;
     // const hoursPassed = Math.ceil((new Date().getTime() - date.getTime()) / 3600000);
     return (
       <div

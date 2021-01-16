@@ -1,0 +1,25 @@
+@import '../../../helper.scss';
+@import '../../../_variables.scss';
+
+.instagramProduct {
+  width: 224px;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  p {
+    font-size: $font-small;
+  }
+
+  img {
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+  }
+  p.name {
+    color: pink;
+  }
+  p.prices {
+    color: #000;
+  }
+}
