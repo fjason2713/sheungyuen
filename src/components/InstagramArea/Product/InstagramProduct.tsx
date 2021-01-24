@@ -24,7 +24,9 @@ export default class InstagramProduct extends React.Component<IInstagramProductP
     const { image, name, originalPrice, discountPrice } = this.props;
     return (
       <div className={classes.instagramProduct}>
-        <img src={image} alt={'product'} />
+        <div className={classes.interactiveImg}>
+          <img src={image} alt={'product'} />
+        </div>
         <p className={classes.name}>{name}</p>
         <p className={classes.prices}>
           {!!discountPrice ? (
