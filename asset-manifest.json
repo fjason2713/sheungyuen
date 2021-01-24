@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sheungyuen/static/css/main.54c956b5.chunk.css",
+    "main.js": "/sheungyuen/static/js/main.d772adad.chunk.js",
+    "main.js.map": "/sheungyuen/static/js/main.d772adad.chunk.js.map",
+    "runtime-main.js": "/sheungyuen/static/js/runtime-main.2ffd00f1.js",
+    "runtime-main.js.map": "/sheungyuen/static/js/runtime-main.2ffd00f1.js.map",
+    "static/js/2.cbc67fb2.chunk.js": "/sheungyuen/static/js/2.cbc67fb2.chunk.js",
+    "static/js/2.cbc67fb2.chunk.js.map": "/sheungyuen/static/js/2.cbc67fb2.chunk.js.map",
+    "static/js/3.6b1e99c9.chunk.js": "/sheungyuen/static/js/3.6b1e99c9.chunk.js",
+    "static/js/3.6b1e99c9.chunk.js.map": "/sheungyuen/static/js/3.6b1e99c9.chunk.js.map",
+    "index.html": "/sheungyuen/index.html",
+    "static/css/main.54c956b5.chunk.css.map": "/sheungyuen/static/css/main.54c956b5.chunk.css.map",
+    "static/js/2.cbc67fb2.chunk.js.LICENSE.txt": "/sheungyuen/static/js/2.cbc67fb2.chunk.js.LICENSE.txt",
+    "static/media/alvava.eb77b202.jpg": "/sheungyuen/static/media/alvava.eb77b202.jpg",
+    "static/media/App.module.scss": "/sheungyuen/static/media/alvava_light.b36a5d1c.jpg",
+    "static/media/sy_logo.a17db523.jpg": "/sheungyuen/static/media/sy_logo.a17db523.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ffd00f1.js",
+    "static/js/2.cbc67fb2.chunk.js",
+    "static/css/main.54c956b5.chunk.css",
+    "static/js/main.d772adad.chunk.js"
+  ]
+}
